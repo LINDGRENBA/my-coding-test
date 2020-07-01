@@ -2,10 +2,19 @@ import { Flashcard } from '../src/create-flashcard.js';
 
 describe('Flashcard', () => {
 
-  test('Should create a flashcard object', () => {
-    let possibleAnswers = ["A city in North Dakota", "A new species of animal", "A programming language"]
-    let testFlashcard = new Flashcard("What's javascript?", possibleAnswers, "A programming language");
-    expect(testFlashcard).toEqual({question: "What's javascript?", possibleAnswers:possibleAnswers, correctAnswer: "A programming language", timesUp: 30});
+  jest.useFakeTimers();
+  let testCard;
+
+  beforeEach(function() {
+    testCard = new Flashcard("What's javascript?", ["A city in North Dakota", "A new species of animal", "A programming language"], "A programming language");
+  });
+
+  afterEach(function() {
+    jest.clearAllTimers();
+  });
+
+  test('Should have a question, array of answers, correct answer and timesUp equal to 30 when created', () => {
+    expect(testCard).toEqual({question: "What's javascript?", possibleAnswers:["A city in North Dakota", "A new species of animal", "A programming language"], correctAnswer: "A programming language", timesUp: 30});
   });
 
 });
