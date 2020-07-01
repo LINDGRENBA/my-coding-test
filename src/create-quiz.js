@@ -19,7 +19,8 @@ export class Quiz {
   }
 
   saveWrongAnswersForReview(testCard) {
-    let wrongAnswers = [];
+    this.wrongAnswers = [];
+    this.wrongAnswers.push(testCard);
     // wrongAnswers.push(this.flashcards[index]);
   }
 

@@ -40,7 +40,7 @@ describe('Quiz', () => {
     let userAnswer = "A city in North Dakota";
     if(!testCard.checkUserAnswer(userAnswer)) {
       myQuiz.saveWrongAnswersForReview(testCard);
-      expect(myQuiz.wrongAnswers).toEqual({testCard});
+      expect(myQuiz.wrongAnswers[0]).toEqual(testCard);
     }
   });
 
