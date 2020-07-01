@@ -18,6 +18,11 @@ export class Quiz {
     this.totalScore += 1;
   }
 
+  saveWrongAnswersForReview(testCard) {
+    let wrongAnswers = [];
+    // wrongAnswers.push(this.flashcards[index]);
+  }
+
 };
 
 

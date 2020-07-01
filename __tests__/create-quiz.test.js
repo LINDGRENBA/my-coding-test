@@ -7,9 +7,11 @@ describe('Quiz', () => {
   jest.useFakeTimers();
   let myQuiz;
   let flashcards;
+  let testCard;
 
   beforeEach(function() {
-    flashcards = [new Flashcard, new Flashcard];
+    testCard = new Flashcard("What's javascript?", ["A city in North Dakota", "A new species of animal", "A programming language"], "A programming language");
+    flashcards = [testCard];
     myQuiz = new Quiz(flashcards);
     jest.clearAllTimers();
   });
@@ -29,9 +31,17 @@ describe('Quiz', () => {
     expect(myQuiz.index).toEqual(1);
   });
 
-  test('totalScore should increase by 1', () => {
+  test('should increase totalScore by 1', () => {
     myQuiz.increaseTotalScore();
     expect(myQuiz.totalScore).toEqual(1);
+  });
+
+  test('should push flashcard object to wrongAnswers array if user selects wrong answer', () => {
+    let userAnswer = "A city in North Dakota";
+    if(!testCard.checkUserAnswer(userAnswer)) {
+      myQuiz.saveWrongAnswersForReview(testCard);
+      expect(myQuiz.wrongAnswers).toEqual({testCard});
+    }
   });
 
 });
