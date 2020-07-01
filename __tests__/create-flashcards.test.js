@@ -23,4 +23,9 @@ describe('Flashcard', () => {
     expect(testCard.timesUp).toEqual(26);
   });
 
+  test('return true if user answer is correct', () => {
+    let userAnswer = "A programming language";
+    expect(testCard.checkUserAnswer(userAnswer)).toEqual(true);
+  });
+
 });

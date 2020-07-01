@@ -3,6 +3,7 @@ export class Quiz {
     this.totalScore = 0;
     this.flashcards = flashcards;
     this.index = 0;
+    this.wrongAnswers;
   }
 
   increaseIndex() {

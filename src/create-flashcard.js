@@ -4,7 +4,6 @@ export class Flashcard {
     this.possibleAnswers = possibleAnswers;
     this.correctAnswer = correctAnswer;
     this.timesUp = 30;
-    this.timeInterval;
   }
 
   decreaseTime() {
@@ -13,6 +12,9 @@ export class Flashcard {
     }, 1000);
   }
 
+  checkUserAnswer(userAnswer) {
+
+  }
 
 }
 
