@@ -41,18 +41,22 @@ If you want to test your knowledge of HTML, CSS and JavaScript, this app will he
 | -------- | ----- | ------ | -------- |
 |    Program will create a quiz object with total score, an array of questions and a variable to target the index of the array     |    n/a   |   quiz {totalScore: 0, questions = [], index: 0}    |     N     |
 |    Program will create a flashcard object with the question, an array of possible answers and the correct answer     |    n/a    |    flascard{question: "What's javascript?", possAnswers = ["A city in North Dakota", "An new species of animal", correctAnswer: "A programming language"], "A programming language"}    |     N     |
-|          |       |        |          |
+|     If user does not answer question, answers wrong or if time runs out, question will be added to an array to be cycled through later     |   User skips question, user selects wrong answer   |   wrongArray.push(unanswered/incorrectly answered question flashcard)   |     N    |
+|     If user selects correct answer, totalScore will increase     |   user chooses correct answer    |    score ++     |     N     |
+|     For each new card, timer will re-start     |    new flashcard    |    timer resets to 30 seconds    |     N     |
 |          |       |        |          |
 |          |       |        |          |
 
 ## Front End Goals Corresponding to Specifications
 
 | Related Spec | User Action | Front End Display | Achieved(Y/N?) |
-| Program will create quiz object  |  User clicks "start quiz"  |  n/a  |  N  |
+| Program will create quiz object  |  User clicks "start quiz"  |  front end displays first question  |  N  |
+| n/a  |  User clicks submit button  |  front end displays next question  |  N  |
+| n/a  |  User clicks skip button  |  front end displays next question  |  N  |
+| For each new card, timer will re-start  |  user submits answer  |  new flashcard displays, timer shows 30 sec to answer question  |  N  |
 |   |   |   |   |
 |   |   |   |   |
-|   |   |   |   |
-* The UI will access a flashcard object and display its question and 
+
 
 ## Known Bugs
 
