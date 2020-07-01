@@ -42,7 +42,7 @@ If you want to test your knowledge of HTML, CSS and JavaScript, this app will he
 |    Program will create a quiz object with total score, an array of questions and a variable to target the index of the array     |    n/a   |   quiz {totalScore: 0, questions = [], index: 0}    |     Y     |
 |    Program will create a flashcard object with the question, an array of possible answers, correct answer and timesUp     |    n/a    |    flascard{question: "What's javascript?", possAnswers = ["A city in North Dakota", "An new species of animal", correctAnswer: "A programming language", timesUp: 30], "A programming language"}    |     Y     |
 |     timesUp will decrement by 1 every 30 seconds     |       4 seconds have passed   |   timesUp = 26    |     Y      |
-|     Program will display increment quiz.index by 1 after 30 seconds     |   30 seconds pass    |   quiz.index++    |     N     |
+|     Program will increment quiz.index by 1 after 30 seconds     |   30 seconds pass    |   quiz.index++    |     N     |
 |     If user skips question or answers question wrong, question will be added to an array to be cycled through later     |   User skips question, user selects wrong answer   |   wrongArray.push(unanswered/incorrectly answered question flashcard)   |     N    |
 |     If user selects correct answer, totalScore will increase     |   user chooses correct answer    |    score ++     |     N     |
 |     For each new card, timer will re-start     |    new flashcard    |    timer resets to 30 seconds    |     N     |

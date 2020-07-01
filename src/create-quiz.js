@@ -5,8 +5,16 @@ export class Quiz {
     this.index = 0;
   }
 
-  //refactor to have flashcards instead of questions
+  increaseIndex() {
+    setTimeout(() => {
+
+    }, 30000);
+  }
 
 };
 
-//could use setTimeout to move to change index after 30 seconds
+// setTimeout(() => {
+//   this.index++;
+// }, 30000);
+
+//could use setTimeout to change index after 30 seconds

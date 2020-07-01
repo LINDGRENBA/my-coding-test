@@ -22,4 +22,9 @@ describe('Quiz', () => {
     expect(myQuiz).toEqual({totalScore: 0, flashcards: flashcards, index: 0});
   });
 
+  test('should increment index by 1 after 30 seconds', () => {
+    jest.advanceTimersByTime(30001);
+    expect(myQuiz.index).toEqual(1);
+  });
+
 });
