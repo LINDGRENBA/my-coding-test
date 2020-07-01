@@ -28,4 +28,9 @@ describe('Flashcard', () => {
     expect(testCard.checkUserAnswer(userAnswer)).toEqual(true);
   });
 
+  test('return false if user answer is wrong', () => {
+    let userAnswer = "A city in North Dakota";
+    expect(testCard.checkUserAnswer(userAnswer)).toEqual(false);
+  });
+
 });
