@@ -1,7 +1,7 @@
 export class Quiz {
-  constructor(questions) {
+  constructor(flashcards) {
     this.totalScore = 0;
-    this.questions = questions;
+    this.flashcards = flashcards;
     this.index = 0;
   }
 
