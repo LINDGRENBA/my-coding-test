@@ -1,18 +1,18 @@
-# PROJEC NAME
+# My Coding Test
 
-#### SHORT DESCRIPTION project for Epicodus, 00.00.0000
+#### Asynchronousity project for Epicodus, 06.30.2020
 
 ## By Brittany Lindgren
 
 ## Description
 
-ELEVATOR PITCH HERE
+If you want to test your knowledge of HTML, CSS and JavaScript, this app will help you. By taking the quiz, you'll be able to confirm which concepts you've got down solid and which are still fuzzy. Then, you'll be able to review the fuzzy ones to help you learn and re-inforce your knowledge.
 
 ## Setup/Installation Requirements
 
 | Steps | Example |
 | -------- | ----- |
-| Follow this [link to the project repository](PUT LINK HERE) on GitHub.   |  [Link to the project repository](PUT LINK HERE)  |    
+| Follow this [link to the project repository](https://github.com/LINDGRENBA/my-coding-test) on GitHub.   |  [Link to the project repository](https://github.com/LINDGRENBA/my-coding-test)  |    
 | Click on the "Clone or download" button to copy the project link.   |   ![Image of GitHub Clone or download button](assets/images/readme/clone-download-button.PNG)   |   
 | If you are comfortable with the command line, you can copy the project link and clone it through your command line with the command `git clone`. Otherwise, I recommend choosing "**Download ZIP**".   |   ![Download ZIP option on GitHub](assets/images/readme/download-zip.PNG)  |   
 |  Once the ZIP file has finished downloading, you can right click on the file to view the zip folder in your downloads.   |   ![ZIP folder in downloads](assets/images/readme/zip-folder.PNG)  |   
@@ -37,9 +37,22 @@ ELEVATOR PITCH HERE
 
 ## Specifications
 
-| Behavior | Input | Output |  Completed(Y/N?)  | 
+| Behavior | Input | Output |  Achieved(Y/N?)  | 
 | -------- | ----- | ------ | -------- |
+|    Program will create a quiz object with total score, an array of questions and a variable to target the index of the array     |    n/a   |   quiz {totalScore: 0, questions = [], index: 0}    |     N     |
+|    Program will create a flashcard object with the question, an array of possible answers and the correct answer     |    n/a    |    flascard{question: "What's javascript?", possAnswers = ["A city in North Dakota", "An new species of animal", correctAnswer: "A programming language"], "A programming language"}    |     N     |
 |          |       |        |          |
+|          |       |        |          |
+|          |       |        |          |
+
+## Front End Goals Corresponding to Specifications
+
+| Related Spec | User Action | Front End Display | Achieved(Y/N?) |
+| Program will create quiz object  |  User clicks "start quiz"  |  n/a  |  N  |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
+* The UI will access a flashcard object and display its question and 
 
 ## Known Bugs
 
