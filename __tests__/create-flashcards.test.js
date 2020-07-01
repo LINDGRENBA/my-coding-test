@@ -18,8 +18,8 @@ describe('Flashcard', () => {
   });
 
   test('should have a timesUp level of 26 after 4 seconds', () => {
-    jest.advanceTimersByTime(4001);
     testCard.decreaseTime();
+    jest.advanceTimersByTime(4001);
     expect(testCard.timesUp).toEqual(26);
   });
 

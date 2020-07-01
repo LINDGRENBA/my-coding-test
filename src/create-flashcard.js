@@ -9,7 +9,7 @@ export class Flashcard {
 
   decreaseTime() {
     setInterval(() => {
-      
+      this.timesUp--;
     }, 1000);
   }
 
