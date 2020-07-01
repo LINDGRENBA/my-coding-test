@@ -17,4 +17,10 @@ describe('Flashcard', () => {
     expect(testCard).toEqual({question: "What's javascript?", possibleAnswers:["A city in North Dakota", "A new species of animal", "A programming language"], correctAnswer: "A programming language", timesUp: 30});
   });
 
+  test('should have a timesUp level of 26 after 4 seconds', () => {
+    jest.advanceTimersByTime(4001);
+    testCard.decreaseTime();
+    expect(testCard.timesUp).toEqual(26);
+  });
+
 });
