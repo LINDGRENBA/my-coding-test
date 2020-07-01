@@ -15,7 +15,7 @@ export class Quiz {
   }
 
   increaseTotalScore() {
-    
+    this.totalScore += 1;
   }
 
 };

@@ -7,12 +7,10 @@ describe('Quiz', () => {
   jest.useFakeTimers();
   let myQuiz;
   let flashcards;
-  let testCard;
 
   beforeEach(function() {
     flashcards = [new Flashcard, new Flashcard];
     myQuiz = new Quiz(flashcards);
-    testCard = new Flashcard("What's javascript?", ["A city in North Dakota", "A new species of animal", "A programming language"], "A programming language");
     jest.clearAllTimers();
   });
 
@@ -32,7 +30,7 @@ describe('Quiz', () => {
   });
 
   test('totalScore should increase by 1', () => {
-    let userAnswer = "A programming language";
+    myQuiz.increaseTotalScore();
     expect(myQuiz.totalScore).toEqual(1);
   });
 
