@@ -24,7 +24,7 @@ export class Quiz {
     // wrongAnswers.push(this.flashcards[index]);
   }
 
-};
+}
 
 
 //could use setTimeout to change index after 30 seconds

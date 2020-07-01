@@ -44,8 +44,8 @@ If you want to test your knowledge of HTML, CSS and JavaScript, this app will he
 |     timesUp will decrement by 1 every 30 seconds     |       4 seconds have passed   |   timesUp = 26    |     Y      |
 |     Program will increment quiz.index by 1 after 30 seconds     |   30 seconds pass    |   quiz.index++    |     Y     |
 |     If user selects correct answer, totalScore will increase     |   user chooses correct answer    |    score ++     |     Y    |
-|     If user skips question or answers question wrong, question will be added to an array to be cycled through later     |   User skips question, user selects wrong answer   |   wrongArray.push(unanswered/incorrectly answered question flashcard)   |     N    |
-|     For each new card, timer will re-start     |    new flashcard    |    timer resets to 30 seconds    |     N     |
+|     If user skips question or answers question wrong, question will be added to an array to be cycled through later     |   User skips question, user selects wrong answer   |   wrongArray.push(unanswered/incorrectly answered question flashcard)   |     Y    |
+|     For each new card, timer will re-start     |    new flashcard    |    timer resets to 30 seconds    |     Should already be happening since each card comes with timesUp set to 30 and Quiz increaseIndex method increases index after 30 seconds     |
 |          |       |        |          |
 |          |       |        |          |
 
