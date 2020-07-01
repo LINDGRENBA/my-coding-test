@@ -23,7 +23,9 @@ describe('Quiz', () => {
   });
 
   test('should increment index by 1 after 30 seconds', () => {
-    jest.advanceTimersByTime(30001);
+    jest.setTimeout(35000);
+    myQuiz.increaseIndex();
+    jest.advanceTimersByTime(31000);
     expect(myQuiz.index).toEqual(1);
   });
 

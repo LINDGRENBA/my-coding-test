@@ -7,14 +7,11 @@ export class Quiz {
 
   increaseIndex() {
     setTimeout(() => {
-
+      this.index += 1;
     }, 30000);
   }
 
 };
 
-// setTimeout(() => {
-//   this.index++;
-// }, 30000);
 
 //could use setTimeout to change index after 30 seconds
