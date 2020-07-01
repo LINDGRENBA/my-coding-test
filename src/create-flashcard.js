@@ -1,3 +1,4 @@
+import { Quiz } from './create-quiz.js';
 export class Flashcard {
   constructor(question, possibleAnswers, correctAnswer) {
     this.question = question;
@@ -14,8 +15,10 @@ export class Flashcard {
 
   checkUserAnswer(userAnswer) {
     if(userAnswer === this.correctAnswer) {
+      //if user answers correctly, add a point to their total score
       return true;
     } else {
+      //if wrong or skip, add the flashcard to an array, to be used to review later
       return false;
     }
   }

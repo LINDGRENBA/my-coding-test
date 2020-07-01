@@ -1,3 +1,5 @@
+import { flashcards } from './create-flashcard.js';
+
 export class Quiz {
   constructor(flashcards) {
     this.totalScore = 0;
@@ -10,6 +12,10 @@ export class Quiz {
     setTimeout(() => {
       this.index += 1;
     }, 30000);
+  }
+
+  increaseTotalScore() {
+    
   }
 
 };
