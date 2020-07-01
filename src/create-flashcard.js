@@ -13,7 +13,9 @@ export class Flashcard {
   }
 
   checkUserAnswer(userAnswer) {
-
+    if(userAnswer === this.correctAnswer) {
+      return true;
+    }
   }
 
 }
