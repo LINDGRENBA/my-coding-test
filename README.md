@@ -39,8 +39,8 @@ If you want to test your knowledge of HTML, CSS and JavaScript, this app will he
 
 | Behavior | Input | Output |  Achieved(Y/N?)  | 
 | -------- | ----- | ------ | -------- |
-|    Program will create a quiz object with total score, an array of questions and a variable to target the index of the array     |    n/a   |   quiz {totalScore: 0, questions = [], index: 0}    |     N     |
-|    Program will create a flashcard object with the question, an array of possible answers and, correct answer and timesUp     |    n/a    |    flascard{question: "What's javascript?", possAnswers = ["A city in North Dakota", "An new species of animal", correctAnswer: "A programming language", timesUp: 30], "A programming language"}    |     N     |
+|    Program will create a quiz object with total score, an array of questions and a variable to target the index of the array     |    n/a   |   quiz {totalScore: 0, questions = [], index: 0}    |     Y     |
+|    Program will create a flashcard object with the question, an array of possible answers, correct answer and timesUp     |    n/a    |    flascard{question: "What's javascript?", possAnswers = ["A city in North Dakota", "An new species of animal", correctAnswer: "A programming language", timesUp: 30], "A programming language"}    |     N     |
 |     timesUp will decrement by 1 every 30 seconds     |       3 seconds have passed   |   timesUp = 27    |     N      |
 |     Program will display next flashcard when timesUp === 0     |   timesUp === 0    |    next card displays    |     N     |
 |     If user skips question or answers question wrong, question will be added to an array to be cycled through later     |   User skips question, user selects wrong answer   |   wrongArray.push(unanswered/incorrectly answered question flashcard)   |     N    |

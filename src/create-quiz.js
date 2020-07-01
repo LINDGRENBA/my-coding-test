@@ -5,4 +5,6 @@ export class Quiz {
     this.index = 0;
   }
 
+  //refactor to have flashcards instead of questions
+
 };
