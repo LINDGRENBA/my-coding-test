@@ -16,7 +16,7 @@ export class Flashcard {
     if(userAnswer === this.correctAnswer) {
       return true;
     } else {
- 
+      return false;
     }
   }
 
