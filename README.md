@@ -1,6 +1,8 @@
-# My Coding Test
+<h1 align = "center"> My Coding Test
 
-#### Asynchronousity project for Epicodus, 06.30.2020
+<h2 align = "center"> Asynchronousity project for Epicodus, updated 10.20.2020
+
+<h1 align = "center"><img width='550' height='300' src='assets/images/readme/quiz.PNG'>
 
 ## By Brittany Lindgren
 
