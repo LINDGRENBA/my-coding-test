@@ -5,6 +5,7 @@ html, body {
   /* background-color: #373F51; */
   background-image: url(../assets/images/test.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #beforeQuiz {
@@ -20,6 +21,11 @@ button {
 }
 
 footer {
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem;
   text-align: center;
   color: #FFF;
 }
