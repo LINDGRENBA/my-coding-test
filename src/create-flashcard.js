@@ -1,4 +1,5 @@
-import { Quiz } from './create-quiz.js';
+// import { Quiz } from './create-quiz.js';
+
 export class Flashcard {
   constructor(question, possibleAnswers, correctAnswer) {
     this.question = question;
